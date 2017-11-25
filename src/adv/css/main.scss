@@ -1,0 +1,35 @@
+@import "fonts";
+@import "variable";
+@import "mixins";
+
+#banner{
+	width: $banner-width;
+	height: $banner-height;
+	background: $banner-bk;
+	box-sizing: border-box;
+	border: $banner-border;
+	margin: 0 auto;
+
+	// Frame 1
+	#Frame1{
+		.introduction{
+			color: $first-frame-colour;
+			font-family: 'Permanent Marker';
+			font-size: 72px;
+			font-weight: bolder;
+			letter-spacing: 0.3em;
+			position: relative;
+			.hello_world{
+				position: absolute;
+				top: 50px;
+				left: 120px;
+			}
+			svg{
+				position: relative;
+				top: 150px;
+				left: 420px;
+			}
+		}
+	}
+}
+

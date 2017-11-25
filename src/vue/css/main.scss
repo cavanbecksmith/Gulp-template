@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import "variable";
+@import "mixins";
+
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#infographic_2017_26 {
+	position:relative;
+    width:100%; 
+    max-width: 650px;
+    padding:0px;
+    margin: 0px auto;
+	border: 1px solid #cfd4d8;
+    box-sizing: border-box;
+    font-family:'AkkuratProRegular', Arial, sans-serif;
+    text-align: left;
+}
+
+#infographic_2017_26 .accordion_section {
+    position: relative;
+    display: block;
+}
+
+#infographic_2017_26 .accordion_section .accordion_intro {
+    position: relative;
+    width: 100%;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    background: 96% 100% no-repeat;
+    /*background-size: 61px 61px !important;*/
+}
+
+#infographic_2017_26 .accordion_section.green .accordion_intro {
+    background-color: #86b926;
+}
+
+#infographic_2017_26 .accordion_section.blue .accordion_intro {
+    background-color: #003594;
+}
+
+#infographic_2017_26 .accordion_section.magenta .accordion_intro {
+    background-color: #c50084;
+}
+
+#infographic_2017_26 .accordion_intro.growth {
+    background-image: url('../img/gdp-icon.png');
+    background-size: 53px 48px !important;
+}
+
+#infographic_2017_26 .accordion_intro.inflation {
+    background-image: url('../img/inflation-icon.png');
+    background-size: 57px 48px !important;
+}
+
+#infographic_2017_26 .accordion_intro.unemployment {
+    background-image: url('../img/unemployment-icon.png');
+    background-size: 70px 55px !important;
+}
+
+#infographic_2017_26 .accordion_intro.interest {
+    background-image: url('../img/interest-icon.png');
+    background-size: 57px 53px !important;
+}
+
+#infographic_2017_26 .accordion_intro.balance {
+    background-image: url('../img/balance-icon.png');
+    background-size: 53px 51px !important;
+}
+
+#infographic_2017_26 .accordion_intro.debt {
+    background-image: url('../img/debt-icon.png');
+    background-size: 53px 58px !important;
+}
+
+#infographic_2017_26 .accordion_heading {
+    position: relative;
+    display: inline-block;
+    font-family:'AkkuratProBold', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+#infographic_2017_26 .info {
+    position: relative;
+    display: inline-block;
+    background: url('../img/info.svg') no-repeat top left;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+#infographic_2017_26 .arrow {
+    position: absolute;
+    background: url('../img/arrow-down.svg') no-repeat top left;
+    background-size: cover;
+    width: 19px;
+    height: 19px;
+    top: 35%;
+    right: 20px;
+    display: none;
+}
+
+#infographic_2017_26 .accordion_content {
+    position: relative;
+    width: 100%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    background: #ffffff;
+    display: block;
+}
+
+#infographic_2017_26 .content_intro {
+    position: relative;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    padding: 0px 20px 20px 20px;
+}
+
+#infographic_2017_26 .accordion_content table {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+#infographic_2017_26 .accordion_content .shine {
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+ 
+    -webkit-animation: ShineAnimation 5s infinite cubic-bezier(.12,.89,.98,.47);
+    -moz-animation: ShineAnimation 5s infinite cubic-bezier(.12,.89,.98,.47);
+    -ms-animation: ShineAnimation 5s infinite cubic-bezier(.12,.89,.98,.47);
+    -o-animation: ShineAnimation 5s infinite cubic-bezier(.12,.89,.98,.47);
+    animation: ShineAnimation 5s infinite cubic-bezier(.12,.89,.98,.47);
+    
+}
+
+#infographic_2017_26 .accordion_content .shine.paused{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -ms-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+}
+
+#infographic_2017_26 .accordion_content table tr th {
+    vertical-align: middle;
+    font-family:'AkkuratProBold', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-align: right;
+    padding: 13px 0px;
+    vertical-align: top;
+}
+
+#infographic_2017_26 .accordion_content table tr th span {
+    display: block;
+    font-size: 10px;
+    text-align: right;
+}
+
+#infographic_2017_26 .accordion_content table tr td {
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    padding: 5px 0px;
+}
+
+#infographic_2017_26 .accordion_content table tr th,
+#infographic_2017_26 .accordion_content table tr:nth-of-type(odd) td {
+    background: rgba(210, 215, 219, 0.3);
+}
+
+#infographic_2017_26 .accordion_content table tr td:nth-of-type(1) {
+    width: 30px;
+    padding-left: 20px;
+}
+
+#infographic_2017_26 .accordion_content table tr th:nth-of-type(2) {
+    padding-right: 10px;
+}
+
+#infographic_2017_26 .accordion_content table tr td:nth-of-type(2) {
+    width: 45px;
+}
+
+#infographic_2017_26 .accordion_content table tr td:nth-of-type(2) img {
+    position: relative;
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+    z-index: 101;
+}
+
+#infographic_2017_26 .accordion_content table tr td:nth-of-type(4) {
+    width: 55px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+#infographic_2017_26 .accordion_content table tr td:nth-of-type(5) {
+    width: 120px;
+    text-align: center;
+}
+
+#infographic_2017_26 .accordion_content table tr td:nth-of-type(5) img {
+    width: 24px;
+    height: auto;
+}
+
+#infographic_2017_26 .accordion_content table tr th:nth-of-type(4),
+#infographic_2017_26 .accordion_content table tr td:nth-of-type(6) {
+    width: 50px;
+    text-align: right;
+}
+
+#infographic_2017_26 .accordion_content table tr th:nth-of-type(5),
+#infographic_2017_26 .accordion_content table tr td:nth-of-type(7) {
+    width: 80px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#infographic_2017_26 .accordion_section.green .accordion_content table tr.highlighted td {
+    background: rgba(134, 185, 38, 0.2);
+}
+
+#infographic_2017_26 .accordion_section.blue .accordion_content table tr.highlighted td {
+    background: rgba(0, 53, 148, 0.2);
+}
+
+#infographic_2017_26 .accordion_section.magenta .accordion_content table tr.highlighted td {
+    background: rgba(197, 0, 132, 0.2);
+}
+
+#infographic_2017_26 #popup_box {
+    position: absolute;
+    width: 230px;
+    padding: 10px;
+    box-sizing: border-box;
+	border: 1px solid #cfd4d8;
+    background: #ffffff;
+    display: none;
+    z-index: 1000;
+}
+
+#infographic_2017_26 #popup_box.green {
+	border: 1px solid #86b926;
+}
+
+#infographic_2017_26 #popup_box.blue {
+	border: 1px solid #003594;
+}
+
+#infographic_2017_26 #popup_box.magenta {
+	border: 1px solid #c50084;
+}
+
+#infographic_2017_26 #popup_box #top_arrow {
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    background: url('../img/top-arrow.png') no-repeat top left;
+    width: 7px;
+    height: 8px;
+}
+
+#infographic_2017_26 #popup_box #close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url('../img/close.svg') no-repeat top left;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+#infographic_2017_26 #popup_box #popup_heading {
+    position: relative;
+    font-family:'AkkuratProBold', Arial, sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    color: #86b926;
+    margin-bottom: 10px;
+}
+
+#infographic_2017_26 #popup_box.green #popup_heading {
+    color: #86b926;
+}
+
+#infographic_2017_26 #popup_box.blue #popup_heading {
+    color: #003594;
+}
+
+#infographic_2017_26 #popup_box.magenta #popup_heading {
+    color: #c50084;
+}
+
+#infographic_2017_26 #popup_box #popup_area {
+    position: relative;
+    font-size: 11px;
+    line-height: 14px;
+    color: #000000;
+}
+
+#infographic_2017_26 #popup_box #popup_area tr th,
+#infographic_2017_26 #popup_box #popup_area tr td {
+    vertical-align: top;
+    font-size: 11px;
+    line-height: 14px;
+    color: #000000;
+    padding: 0px;
+    text-align: left;
+}
+
+#infographic_2017_26 #popup_box #popup_area tr th:nth-of-type(1) {
+    font-family:'AkkuratProBold', Arial, sans-serif;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #infographic_2017_26 .accordion_section .accordion_intro {
+        background-position: 5% 60% !important;
+        background-repeat: no-repeat !important;
+        background-size: 35px 35px !important;
+        padding: 13px 20px;
+        cursor: pointer;
+    }
+    
+    #infographic_2017_26 .accordion_intro.growth {
+        background-size: 32px 29px !important;
+    }
+
+    #infographic_2017_26 .accordion_intro.inflation {
+        background-size: 33px 28px !important;
+    }
+
+    #infographic_2017_26 .accordion_intro.unemployment {
+        background-size: 38px 30px !important;
+    }
+
+    #infographic_2017_26 .accordion_intro.interest {
+        background-size: 29px 27px !important;
+    }
+
+    #infographic_2017_26 .accordion_intro.balance {
+        background-size: 32px 30px !important;
+    }
+
+    #infographic_2017_26 .accordion_intro.debt {
+        background-size: 27px 30px !important;
+    }
+    
+    #infographic_2017_26 .accordion_heading {
+        margin-left: 45px;
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    #infographic_2017_26 .info {
+        width: 16px;
+        height: 16px;
+        top: 3px;
+    }
+
+    #infographic_2017_26 .arrow {
+        display: block;
+    }
+
+    #infographic_2017_26 .accordion_section.active .arrow {
+        background: url('../img/arrow-right.svg') no-repeat top left;
+    }
+
+    #infographic_2017_26 .accordion_content {
+        display: none;
+    }
+
+    #infographic_2017_26 .accordion_section.active .accordion_content {
+        display: block;
+    }
+    
+    #infographic_2017_26 .accordion_content table tr th {
+        font-size: 14px;
+    }
+    
+    #infographic_2017_26 .accordion_content table tr td {
+        font-size: 12px;
+    }
+    
+    #infographic_2017_26 .accordion_content table tr td:nth-of-type(4) {
+        width: 45px;
+    }
+
+    #infographic_2017_26 .accordion_content table tr td:nth-of-type(5) {
+        width: 35px;
+    }
+    
+    #infographic_2017_26 .accordion_content table tr th:nth-of-type(4) {
+        padding-right: 20px;
+    }
+    
+    #infographic_2017_26 .accordion_content table tr td:nth-of-type(6) {
+        width: 70px;
+        padding-right: 20px;
+    }
+    
+    #infographic_2017_26 .accordion_content table tr th:nth-of-type(5),
+    #infographic_2017_26 .accordion_content table tr td:nth-of-type(7) {
+        display: none;
+    }
+
+}
+
+@-webkit-keyframes ShineAnimation{
+    from {
+        background-repeat:no-repeat;
+        background-image:-webkit-linear-gradient(
+            top left,
+            rgba(255, 255, 255, 0.0) 0%,
+            rgba(255, 255, 255, 0.0) 45%,
+            rgba(255, 255, 255, 0.2) 48%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.2) 52%,
+            rgba(255, 255, 255, 0.0) 57%,
+            rgba(255, 255, 255, 0.0) 100%
+        );
+        background-position:-250px -250px;
+        background-size: 650px 650px
+    }
+    to {
+        background-repeat:no-repeat;
+        background-position:650px 650px;
+    }
+}
+
+@-moz-keyframes ShineAnimation{
+    from {
+        background-repeat:no-repeat;
+        background-image:-webkit-linear-gradient(
+            top left,
+            rgba(255, 255, 255, 0.0) 0%,
+            rgba(255, 255, 255, 0.0) 45%,
+            rgba(255, 255, 255, 0.2) 48%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.2) 52%,
+            rgba(255, 255, 255, 0.0) 57%,
+            rgba(255, 255, 255, 0.0) 100%
+        );
+        background-position:-250px -250px;
+        background-size: 650px 650px
+    }
+    to {
+        background-repeat:no-repeat;
+        background-position:650px 650px;
+    }
+}
+
+@-ms-keyframes ShineAnimation{
+    from {
+        background-repeat:no-repeat;
+        background-image:-webkit-linear-gradient(
+            top left,
+            rgba(255, 255, 255, 0.0) 0%,
+            rgba(255, 255, 255, 0.0) 45%,
+            rgba(255, 255, 255, 0.2) 48%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.2) 52%,
+            rgba(255, 255, 255, 0.0) 57%,
+            rgba(255, 255, 255, 0.0) 100%
+        );
+        background-position:-250px -250px;
+        background-size: 650px 650px
+    }
+    to {
+        background-repeat:no-repeat;
+        background-position:650px 650px;
+    }
+}
+
+@-o-keyframes ShineAnimation{
+    from {
+        background-repeat:no-repeat;
+        background-image:-webkit-linear-gradient(
+            top left,
+            rgba(255, 255, 255, 0.0) 0%,
+            rgba(255, 255, 255, 0.0) 45%,
+            rgba(255, 255, 255, 0.2) 48%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.2) 52%,
+            rgba(255, 255, 255, 0.0) 57%,
+            rgba(255, 255, 255, 0.0) 100%
+        );
+        background-position:-250px -250px;
+        background-size: 650px 650px
+    }
+    to {
+        background-repeat:no-repeat;
+        background-position:650px 650px;
+    }
+}
+
+@keyframes ShineAnimation{
+    from {
+        background-repeat:no-repeat;
+        background-image:-webkit-linear-gradient(
+            top left,
+            rgba(255, 255, 255, 0.0) 0%,
+            rgba(255, 255, 255, 0.0) 45%,
+            rgba(255, 255, 255, 0.2) 48%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.2) 52%,
+            rgba(255, 255, 255, 0.0) 57%,
+            rgba(255, 255, 255, 0.0) 100%
+        );
+        background-position:-250px -250px;
+        background-size: 650px 650px
+    }
+    to {
+        background-repeat:no-repeat;
+        background-position:650px 650px;
+    }
+}
