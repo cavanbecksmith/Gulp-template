@@ -7,7 +7,7 @@ Simply download and `npm install`.
 
 If you wanted to create a new set of tasks for a project called **web** you would simply create a folder inside the `./tasks` folder called `./tasks/web` and create 2 folders inside that called `./tasks/web/dev` and `./tasks/web/prod`.
 
-Now if you wanted to use this folder simply change the variable on the **gulpfile.babel.js** `var project = 'web';` to 'adv'
+Now if you wanted to use this folder simply change the variable on the **gulpfile.babel.js** `var using = project.email;` to another one of the listed strings in the object
 *Make sure that you copy both the dev and prod tasks*
 
 This is where the reuse of modules becomes quite easy as you can copy over all of the neccecary modules containing the tasks from the `./tasks/adv` folder to web folder.
