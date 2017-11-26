@@ -65,50 +65,6 @@ gulp.task('adv:build', () => {
     );
 });
 
-
-/*
-=============================
-Codepen - Template
------------------------------
-*/
-
-gulp.task('codepen', () => {
-    sequence('clean:dev',
-        [
-            'libs:dev',
-            'sass:dev',
-            'css:dev',
-            'data:dev',
-            'img:dev',
-            // 'js:dev',
-            'webpack:dev',
-            'html:dev',
-            'mani:dev'
-        ],
-        'watch',
-        'serve'
-    );
-});
-
-gulp.task('codepen:build', () => {
-    sequence('clean:prod',
-        [
-            // 'audio:prod',
-            'libs:prod',
-            'sass:prod',
-            'css:prod',
-            'data:prod',
-            'img:prod',
-            // 'js:prod'
-            'webpack:prod'
-        ],
-        'html:prod',
-        'rev:prod'
-    );
-});
-
-
-
 /*
 =============================
 Webpack - Template
@@ -146,7 +102,8 @@ gulp.task('webpack:build', () => {
             'webpack:prod'
         ],
         'html:prod',
-        'rev:prod'
+        'rev:prod',
+        'ftp',
     );
 });
 
@@ -190,7 +147,9 @@ gulp.task('vue:build', () => {
         'html:prod',
         'rev:prod',
         'tsjson:prod',
-        'zip'
+        'zip',
+        // 'ftp',
+        'ftp'
     );
 });
 

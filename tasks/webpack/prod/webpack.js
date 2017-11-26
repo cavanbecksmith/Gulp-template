@@ -68,7 +68,7 @@ const webpackConfig = {
 gulp.task('webpack:prod', function() {
   return gulp.src(config.paths.src.webpack + 'webpack.js')
     .pipe(webpackStream(webpackConfig, webpack))
-    .pipe(gulp.dest(config.paths.builds.prod.webpack))
+    .pipe(gulp.dest(config.paths.builds.prod.js))
  });
 
 

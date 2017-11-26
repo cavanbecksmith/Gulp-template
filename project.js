@@ -6,6 +6,6 @@ var project = {
 	webpack: 'webpack',
 };
 
-var using = project.email;
+var using = project.vuejs;
 
 export default using;
