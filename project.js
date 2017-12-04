@@ -6,6 +6,6 @@ var project = {
 	webpack: 'webpack',
 };
 
-var using = project.vuejs;
+var using = project.advertisment;
 
 export default using;

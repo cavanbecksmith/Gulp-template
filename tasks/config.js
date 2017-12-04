@@ -43,9 +43,6 @@ export default (() => {
         }
     });
 
-
-    console.log(path.sep);
-
     return cfg;
 
 })();
